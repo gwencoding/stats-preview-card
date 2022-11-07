@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 :root{
     /*Primary*/
     --main-background:hsl(233, 47%, 7%);
@@ -22,12 +26,14 @@ main{
     display: flex;
     justify-content: center;
     width:75%;
-    margin: 7em auto;
+    margin: 7rem auto;
     background: var(--card-background);
 }
 
 .main-content{
-    padding: 5em;
+    
+    padding: 2.5rem 7rem 2.5rem 5rem;
+
 }
 
 h1, .info-number{
@@ -51,21 +57,46 @@ h1{
 .content-text, .info-text{
     color:var(--stat-headings);
     font-family: var(--font-para);
-    font-size: 0.95em;
+    font-size: 0.85em;
 }
-
-.other-info{
-    display: flex;
-    justify-content: flex-start;
-    
-    
-}
-
-
 
 .info-text{
     text-transform: uppercase;
 }
 
+.other-info{
+    display: flex;
+    justify-content: flex-start;
+    gap:3rem;
+    line-height: 15%;
+    margin-top:5rem;
+    
+}
 
+.content-text{
+    margin-top: 2rem;
+    line-height: 1.5rem;
+}
 
+img{
+    height: 100%;
+    opacity:0.8;
+    mix-blend-mode: multiply;
+    
+}
+
+.img-background{
+    background-color: var(--accent);
+}
+
+@media screen and (max-width:820px){
+    main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width:50%;
+        margin: 7rem auto;
+        background: var(--card-background);
+    }
+    
+}
