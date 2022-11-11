@@ -91,6 +91,7 @@ h1{
 
 img{
     height: 100%;
+   
     opacity:0.8;
     mix-blend-mode: multiply;
     
@@ -129,8 +130,11 @@ img{
 
     .img-background{
         border-radius: 1rem 1rem 0 0;
-        height: 100%;
 
+    }
+
+    img {
+        max-width: 100%;
     }
    /* My last solution
    /*h1{
